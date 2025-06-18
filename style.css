@@ -13,7 +13,6 @@ a {
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
     background-color: #1a1a1a;
 }
 
@@ -162,50 +161,72 @@ nav ul li a {
 
 /* Reachus Text */
 
-.container{
+.container {
     max-width: 1320px;
     margin: 0px 79.600px;
 }
 
-.intro-section{
+.intro-section {
     padding-top: 140px;
     padding-bottom: 140px;
     position: relative;
 }
 
-.row-content{
+.row-content {
     display: flex;
     justify-content: space-between !important;
-    
+
 }
 
-.contentt{
+.contentt {
     max-width: 600px;
     font-size: 30px;
-    margin-left: 100px;
+    margin-left: 70px;
     color: white;
 }
 
-.underline a{
+.underline a {
     text-decoration: underline;
-    color: rgb(21, 207, 148);
+    color: #D4AF37;
 }
 
-.reachus-text{
+.reachus-text {
     padding: 0px 15px;
+}
+
+.anubhav {
+    font-family: "Allerta Stencil", sans-serif;
+    font-weight: 500;
+    margin-left: 70px;
+    margin-top: 50px;
+    color: white;
+    font-size: 50px;
+}
+
+.anubhav span {
+    font-weight: 500;
+
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.allerta-stencil-regular {
+    font-family: "Allerta Stencil", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /* Descrpition text */
 
-.descip-text{
+.descip-text {
     padding: 0px 15px;
 }
 
-.content2{
-     max-width: 600px;
-    font-size:20px;
+.content2 {
+    max-width: 600px;
+    font-size: 20px;
     margin-left: 100px;
-    color:rgb(193, 201, 201) ;
+    color: rgb(193, 201, 201);
 
     margin-left: 100px;
 }
@@ -214,40 +235,144 @@ nav ul li a {
     transform: translateX(-100px);
 }
 
-.marquee{
-   
-   display: flex;
-   align-items: center;
+.marquee {
+
+    display: flex;
+    align-items: center;
     overflow: hidden;
     position: relative;
     color: white;
     padding: 10px;
     font-family: sans-serif;
     margin-left: 40px;
+    width: 600px;
+
 }
 
 .slidebar {
     display: flex;
     align-items: center;
     margin-top: 80px;
-    width: 300px;
-
+    width: 400px;
+    animation: scroll-left 20s linear infinite;
 }
 
-.box{
+.box {
     display: flex;
     gap: 30px;
     font-size: 40px;
     white-space: nowrap;
 }
 
-.item{
+
+.slidebar .box .item2,
+.item4 {
+    font-family: 'Poppins', sans-serif;
+    color: transparent;
+    -webkit-text-stroke: 0.5px #D4AF37;
+}
+
+.item {
     flex-shrink: 0;
 
 }
 
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
 
 
+/* <!-- Services Section --> */
 
-/* font-family: 'Allerta Stencil', sans-serif;
-font-family: 'Space Grotesk', sans-serif; */
+
+.whychooseus-content {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.image {
+    height: 621px;
+    width: 504;
+    transform: rotate(-10deg);
+    margin-bottom: -50px;
+    margin-left: 25px;
+    border-radius: 30px;
+    /* transform: translate(-50px); */
+}
+
+.watch-bttn {
+    color: WHITE;
+    padding: 8px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    position: absolute;
+    border-radius: 30px;
+    transform: rotate(-90deg) translateY(-100%);
+    left: -30px;
+    bottom: 50px;
+}
+
+/* <!-- Why Choose Us Section --> */
+
+.sec-head {
+    max-width: 600px;
+    font-size: 30px;
+    margin-left: 150px;
+    color: white;
+
+}
+
+
+.sub-title h6 {
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 60px;
+    color: #D4AF37;
+}
+
+.second-text {
+    margin-top: 80px;
+    margin-right: 100px;
+    font-size: 15px;
+    color:#C6C8C9 ;
+}
+
+.pro-nd-cust{
+    border: 1px solid white;
+    padding-top: 50px !important;
+    margin-top: 50px !important;
+    border-top: 1px solid gray;
+    border-right: #1a1a1a;
+    border-bottom: #1a1a1a;
+    border-left: #1a1a1a;
+}
+
+.pro-nd-cust .projects .number {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+
+.pro-text {
+    display: flex;       
+    font-size: 16px;
+    color: gray;
+    margin-left: 8px;      
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.pro-nd-cust .cust-satisfaction .num {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
