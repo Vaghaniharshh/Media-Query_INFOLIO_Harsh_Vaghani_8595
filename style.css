@@ -570,7 +570,7 @@ nav ul li a:hover::before {
     align-items: center;
     position: relative;
     overflow: hidden;
-    border-radius: 15px;
+    border-radius: 50%;
     transition: all 0.5s ease;
 }
 
@@ -1610,7 +1610,7 @@ address {
     justify-content: center;
     align-items: center;
     background: transparent;
-    border-radius: 10px;
+    border-radius: 30px;
     padding: 10px 20px;
     margin: 5px 0;
     overflow: hidden;
